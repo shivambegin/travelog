@@ -1,0 +1,70 @@
+.b14{
+    width: 150px !important;
+    margin-bottom: 7px;
+}
+.SearchContainer {
+    display: flex;
+    justify-content: center; /* Centers the search bar horizontally */
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .SearchContainer input {
+    width: 60%; /* Adjust width as needed */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px; /* Rounds the left side */
+    outline: none;
+  }
+  
+  .SearchContainer button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0; /* Rounds the right side */
+    font-size: 1rem;
+  }
+  
+  .SearchContainer button:hover {
+    background-color: orange; /* Slightly darker color on hover */
+  }
+  /* Navbar container */
+.Nav {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  }
+  
+  /* Logo styling */
+  .Nav .Logo {
+    font-size: 2.5rem;
+    color: orange;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Navigation links */
+  .NavLinks {
+    display: flex;
+    gap: 20px;
+    
+  }
+  
+  .NavLinks a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+  
+  .NavLinks a:hover {
+    color: orange; /* Adds color on hover */
+  }

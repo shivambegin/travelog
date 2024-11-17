@@ -1,0 +1,196 @@
+/* General Styling */
+.trip-planner {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+  }
+  
+  .trip-planner h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  .trip-planner label {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  /* Styling the 'Where to?' input field */
+  .input-container {
+    position: relative; /* Allows the icon to be positioned inside the input */
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 40px 12px 12px; /* Added padding-right for icon space */
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #ff5a5f;
+    outline: none;
+  }
+  
+  input[type="text"]::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  /* Styling for the datalist dropdown */
+  datalist {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 5px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  /* Option styling inside datalist */
+  datalist option {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  datalist option:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Icon for the 'Where to?' field */
+  .location-icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    color: #ff5a5f;
+    pointer-events: none; /* Prevent interfering with input click */
+  }
+  
+  .trip-planner .input-container input[type="text"]:focus + .location-icon {
+    color: #ff3f42;
+  }
+  
+  .date-picker-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .date-range {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .date-range span {
+    font-size: 18px;
+    color: #444;
+    font-weight: 500;
+  }
+  
+  /* Input fields and select box */
+  input[type="text"], select, .date-picker {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus, select:focus, .date-picker:focus {
+    border-color: #ff5a5f;
+    outline: none;
+  }
+  
+  /* Button styles */
+  button {
+    width: 100%;
+    padding: 14px 25px;
+    background-color: #ff5a5f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff3f42;
+  }
+  
+  /* Link styles */
+  a {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  a:hover {
+    color: #ff5a5f;
+  }
+  
+  /* Customizing DatePicker Calendar */
+  .react-datepicker__triangle {
+    display: none; /* Remove the triangle pointer */
+  }
+  
+  .react-datepicker__header {
+    background-color: #ff5a5f;
+    color: white;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .react-datepicker__month-container {
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+  }
+  
+  .react-datepicker__day {
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .react-datepicker__day--selected, .react-datepicker__day--keyboard-selected {
+    background-color: #ff5a5f;
+    color: white;
+    border-radius: 50%;
+  }
+  
+  .react-datepicker__day--today {
+    font-weight: bold;
+    color: #ff5a5f;
+  }
+  
+  .react-datepicker__time-container {
+    display: none; /* Remove time picker */
+  }
+  

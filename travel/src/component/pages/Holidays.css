@@ -1,0 +1,79 @@
+.holidays-page {
+    padding: 20px;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  .holidays-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .holidays-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .holiday-card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .holiday-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .holiday-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .holiday-info {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .holiday-destination {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin: 10px 0;
+  }
+  
+  .holiday-description {
+    color: #7f8c8d;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .holiday-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #27ae60;
+    margin-bottom: 15px;
+  }
+  
+  .holiday-book-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .holiday-book-btn:hover {
+    background-color: #c0392b;
+  }
+  
